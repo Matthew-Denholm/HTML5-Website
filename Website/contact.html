@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - Project Self-Work</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Self-Work, The Community Based Website for hobbies and other projects.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="styles.css">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <br>
+            <h1>Project Self-Work</h1>
+            <p>The home base for open-source community projects</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a>
+                    <ul>
+                        <li><a href="projects/current.html">Current Projects</a></li>
+                        <li><a href="projects/closed.html">Closed Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Having Trouble? Let Us Know!</h2>
+            <p>We know not everything goes smoothly. Let us know what the problem is and we will see what we can do to fix it. Want to leave a review? You can do that here to!</p>
+            
+            <form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+                <label for="myName">*Name:</label>
+                <input type="text" name="Name" id="Name" required="required" placeholder="your first and last name">
+                <label for="myEmail">*E-mail:</label>
+                <input type="email" name="Email" id="Email" required="required" placeholder="you@yourdomain.com">
+                <label for="Problem" id="textbox">*Please breifly describe your problem:</label><br>
+                <textarea name="Problem" id="Problem" rows="2" cols="20" required="required"></textarea>
+                <input id="Submit" type="submit" value="Submit">
+                <br>
+                <input id="Reset" type="reset" value="Reset">
+            </form>
+            
+            <h3>Need Direct Contact?</h3>
+            <p>Send an Email to this address.</p>
+            <p><a href="mailto:project@mail.org">project@mail.org</a></p><br>
+            <p>When Email won't do, call this phone number, or send a letter to this address:
+                <br>
+                <br>
+            1000 W. Internet Lane<br>
+            Nowhere, KS 77777<br><br>
+            <a id="mobile" href="tel:000-555-5555">(000)-555-5555</a><span id="desktop">(000)-555-5555</span></p>
+        </main>
+        <footer>This Website is Copyrighted by Matthew Denholm and was made only for Educational Purposes. &copy; 2018</footer>
+    </div>
+</body>
+</html>
+<!--Matthew Denholm-->

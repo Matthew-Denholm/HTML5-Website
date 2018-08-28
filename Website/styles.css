@@ -1,0 +1,318 @@
+*
+{   
+    box-sizing: border-box;
+}
+/* Desktop Styles */
+body
+{   background-color: deepskyblue;
+    color: black;
+    display: block;
+    font-family: Arial, sans-serif, serif;
+}
+embed
+{
+    float: right;
+    padding-right: 30px;
+}
+footer
+{
+    background-color: lightblue;
+    text-align: center;
+    font-style: italic;
+}
+form
+{
+    background-color: skyblue;
+    padding: 10px;
+}
+header
+{   background-color: lightskyblue;
+    background-image: url(images/Logo-header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    display: block;
+    font-family: Arial, sans-serif, serif;
+    font-size: 2em;
+    height: 360px; /*This matches the logo header image height.*/
+    text-align: center;
+    text-shadow: 3px 3px lightgray;
+}
+input
+{
+    display: block;
+    margin-top: 10px;
+}
+img
+{
+    float: right;
+    padding-right: 30px;
+}
+label
+{
+    float: left;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    width: 150px;
+}
+main
+{
+    background-color: skyblue;
+    color: black;
+    overflow: auto; /*This prevents strange overhangs from the footer and navigation elements.*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+nav
+{
+    background-color: lightblue;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+nav a
+{
+    text-decoration: none;
+    transition: background-color 1s linear;
+}
+nav a:link
+{
+    color: black;
+}
+nav a:visited
+{
+    color: crimson;
+}
+nav a:hover
+{
+    color: darkblue;
+    background-color: aliceblue;
+}
+nav li
+{
+    display: inline-block;
+    padding: 0.5em;
+}
+nav li:hover ul
+{
+    display: block;
+}
+nav ul
+{   
+    list-style-type: none;
+    margin: 0;
+}
+nav ul ul
+{
+    background-color: wheat;
+    display: none;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+}
+nav ul ul li
+{
+    border: 1px solid white;
+    display: block;
+    margin-left: 0;
+    padding-left: 0.5em;
+    width: auto;
+}
+table
+{
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 16px;
+    width: 50%;
+}
+td
+{
+    height: 50px;
+    text-align: center;
+    min-width: 170px;
+}
+textarea
+{
+    display: block;
+    margin-bottom: 1em;
+    margin-top: 10px;
+    margin-left: 90px;
+    width: 600px;
+}
+th
+{
+    background-color: steelblue;
+}
+tr
+{
+    background-color: lightskyblue;
+}
+    /*ID Selectors*/
+/**********************************************************************/
+#desktop
+{
+    display: inline;
+}
+#layout
+{
+    height: 200px;
+}
+#mobile
+{
+    display: none;
+}
+#Submit
+{
+    margin-left: 90px;
+}
+#Reset
+{
+    margin-left: 90px;
+}
+#textbox
+{
+    width: 300px;
+    margin-left: 64px;
+}
+#wrapper
+{
+    background-color: lightblue;
+    box-shadow: 5px 5px 5px #828282;
+    min-width: 700px;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/**********************************************************************/
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px)
+{
+    body
+    {
+        margin: 0;
+        padding: 0; 
+    }
+    embed
+    {
+        padding-right: 10px;
+    }
+    footer
+    {
+        margin: 0;
+    }
+    img
+    {
+        padding-right: 10px;
+    }
+    nav
+    {
+        float: none;
+        padding: 0.5em;
+        width: auto;
+    }
+    nav li
+    {
+        display: inline-block;
+    }
+    main 
+    {
+        font-size: 90%;
+        margin-left: 0;
+        padding: 1em;
+    }
+        /*ID Selectors*/
+    /**********************************************************************/
+    #layout
+    {
+        height: 400px;
+    }
+    #wrapper
+    {
+        box-shadow: none;
+        margin: 0;
+        min-width: 0;
+        width: auto;
+    }
+    /**********************************************************************/
+}
+
+/* Smartphone Styles */
+@media only all and (max-width: 768px)
+{
+    embed
+    {
+        padding-right: 0px;
+    }
+    footer
+    {
+        padding: 0;
+    }
+    img
+    {
+        padding-right: 0px;
+    }
+    main
+    {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 0.4em;
+        padding-right: 0.6em;
+    }
+    nav
+    {
+        padding: 0;
+    }
+    nav a
+    {
+        border-bottom: 1px solid #330000;
+        display: block;
+        font-size: 1.3em;
+        padding: 0.2em;
+    }
+    nav li
+    {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul
+    {
+        margin: 0;
+        padding: 0;
+    }
+    nav ul ul
+    {
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+    nav ul ul li
+    {
+        border: none;
+        margin-left: 0;
+        padding-left: 0;
+        width: auto;
+    }
+    textarea
+    {
+        width: 300px;
+    }
+        /*ID Selectors*/
+    /**********************************************************************/
+    #desktop
+    {
+        display: none;
+    }
+    #layout
+    {
+        height: 600px;
+    }
+    #mobile
+    {
+        display: inline;
+    }
+    /**********************************************************************/
+}
