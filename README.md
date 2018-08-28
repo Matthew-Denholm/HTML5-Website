@@ -1,6 +1,6 @@
 # HTML5-Website
 Website made for CMST 135
-The Goal of this project was to build a very basic working website. The following features were to be included with the website:
+The Goal of this project was to build a very basic working website with at least 6 pages (not including the home page). The following features were to be included with the website:
 1. Start file named index.html
 2. Appropriate meta tags.
 3. Association with external style sheet (.css file).
